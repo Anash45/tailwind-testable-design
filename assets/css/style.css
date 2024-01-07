@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    max-width: 1440px;
+}
+.nav-link.active{
+    color: #fff;
+    background-color: #131313;
+}
+
+.nav-link{
+    transition: 0.3s ease-in-out;
+}
+
+.dropdown{
+    position: relative;
+    cursor: pointer;
+}
+.dropdown-container{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: max-content;
+    z-index: 9;
+    background-color: #fff;
+}
+
+.progress{
+    height: 5px;
+    overflow: hidden;
+}
+
+.filled{
+    height: 100%;
+    width: 50%;
+    background-color: #276EE4;
+}
+
+.search .fa-search{
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 8px;
+    font-size: 16px;
+    color: #828282;
+}
+.search .fa-chevron-down{
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 8px;
+    font-size: 16px;
+    color: #828282;
+}
+.search .fa-circle{
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 8px;
+    font-size: 8px;
+    color: #828282;
+}
+
+.fa-circle.inprogress{
+    color: #FFC095;
+}
+.fa-circle.ready{
+    color: #4BC337;
+}
+
+.text-2xs{
+    font-size: 0.60rem;
+    line-height: 0.90rem;
+}
